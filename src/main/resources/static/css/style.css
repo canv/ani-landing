@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato|Raleway');
+
+/* global */
+body {
+    /* font-size: 250%; */
+  background-color: #f2f2f2;
+  /* font-family: "Lato"; */
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  /* font-family: "Raleway"; */
+  font-size: 250%;
+}
+
+/* navbar */
+.logo{
+  width: 40px;
+  height: 40px;
+}
+.navbar{
+  font-weight: 800;
+  font-size: 24px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  border-bottom: 1px solid rgba(1,1,1,0.1);
+  background-color: rgba(0,0,0,0.2);
+}
+
+
+/* backgroung video and header home*/
+header {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+header .container {
+  position: relative;
+  z-index: 2;
+}
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://sun9-20.userapi.com/impf/c850736/v850736478/655ab/We8XvDKwItc.jpg?size=720x1080&quality=96&sign=c891a6e2687a64b42b807dc858c3ae77&type=album') black no-repeat center center scroll;
+  }
+  header video {
+    display: none;
+  }
+}
+
+
+/* works preview cards and modal videos */
+.card-video-work {
+  border-width: 0px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  box-shadow: 0px 0px 60px black;
+}
+.card-video-work:hover {
+  transform:scale(1.03);
+  cursor:pointer;
+}
+.card-title{
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.card-video-work:hover .card-title{
+  opacity: 1;
+}
+.card-text{
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.card-video-work:hover .card-text{
+  opacity: 1;
+}
+
+/* footer */
+.h5-footer-custom{
+  font-size: 130%;
+}

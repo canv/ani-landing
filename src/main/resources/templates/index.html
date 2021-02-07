@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<!-- <html lang="en" xmlns:th="http://www.thymeleaf.org"> -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+  integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+  crossorigin="anonymous">
+
+  <!-- fontawesome icons CSS -->
+  <link rel="stylesheet"  type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+
+  <!-- custom CSS -->
+  <!-- <link rel="stylesheet"  href="css/style.css" type="text/css"> -->
+<!--  <link rel="stylesheet"  href="css\style.css" type="text/css">-->
+<!-- <link rel="stylesheet" type="text/css" media="all" href="css/style.css" th:href="@{css/style.css}" /> -->
+  <link rel="stylesheet"  href="css/style.css" type="text/css">
+
+  <title>Ani</title>
+</head>
+<body>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark text-white">
+    <div class="container">
+      <a class="navbar-brand" href="#home"><img src="img/logo.jpg" alt="" class="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse mr-auto" id="navbarContent">
+        <!-- <ul class="navbar-nav mr-auto mb-2"> -->
+        <ul class="navbar-nav ms-auto mb-2 ">
+          <li class="nav-item active"><a class="nav-link" href="#home">Главная</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">О нас</a></li>
+          <li class="nav-item"><a class="nav-link" href="#service">Сервисы</a></li>
+          <li class="nav-item"><a class="nav-link" href="#works">Портфолио</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Контакты</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <header id="home">
+    <div class="overlay"></div>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"><source src="video/header_background_mp4.mp4" type="video/mp4"> </video>
+      <div class="container h-100">
+        <div class="d-flex h-100 text-center align-items-center">
+          <div class="w-100 text-white">
+            <h1 class="display-3 mb-5">Творческое объединение из Kzn</h1>
+            <p class="lead mb-0 mt-5">Мы и есть медиа пространство</p>
+          </div>
+        </div>
+      </div>
+  </header>
+
+  <main>
+
+      <section class="works">
+        <div id="works" class="linkWorks selection-title  mb-5">
+          <!-- todo fix it -->  -
+        </div>
+        <div class="selection-title text-center">
+          <h2 >Портфолио</h2>
+          <p>Наши работы</p>
+        </div>
+        <div class="container my-2">
+          <div class="row video-btns-custom">
+            <div class="col-md-6 col-sm-12 mt-3">
+              <a data-bs-toggle="modal" data-bs-target="#modalVideo1">
+                <div class="card bg-dark text-white card-video-work">
+                  <img src="img/video_perview_1.jpg" class="card-img" alt="...">
+                  <div class="card-img-overlay">
+                    <h5 class="card-title">BOYFRIEND</h5>
+                    <p class="card-text">Track 4 from physical versions of IGOR featuring CHARLIE WILSON and SANTIGOLD . This content is a little bit longer.</p>
+                    <p class="card-text">Tyler, The Creator</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-6 col-sm-12 mt-3">
+              <a data-bs-toggle="modal" data-bs-target="#modalVideo1">
+                <div class="card bg-dark text-white card-video-work">
+                  <img src="img/video_perview_2.jpg" class="card-img" alt="...">
+                  <div class="card-img-overlay">
+                    <h5 class="card-title">BOYFRIEND</h5>
+                    <p class="card-text">Track 4 from physical versions of IGOR featuring CHARLIE WILSON and SANTIGOLD . This content is a little bit longer.</p>
+                    <p class="card-text">Tyler, The Creator</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-6 col-sm-12 mt-3">
+              <a data-bs-toggle="modal" data-bs-target="#modalVideo1">
+                <div class="card bg-dark text-white card-video-work">
+                  <img src="img/video_perview_3.jpg" class="card-img" alt="...">
+                  <div class="card-img-overlay">
+                    <h5 class="card-title">BOYFRIEND</h5>
+                    <p class="card-text">Track 4 from physical versions of IGOR featuring CHARLIE WILSON and SANTIGOLD . This content is a little bit longer.</p>
+                    <p class="card-text">Tyler, The Creator</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-6 col-sm-12 mt-3">
+              <a data-bs-toggle="modal" data-bs-target="#modalVideo1">
+                <div class="card bg-dark text-white card-video-work">
+                  <img src="img/video_perview_4.jpg" class="card-img" alt="...">
+                  <div class="card-img-overlay">
+                    <h5 class="card-title">BOYFRIEND</h5>
+                    <p class="card-text">Track 4 from physical versions of IGOR featuring CHARLIE WILSON and SANTIGOLD . This content is a little bit longer.</p>
+                    <p class="card-text">Tyler, The Creator</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Modal Video 1 -->
+          <div class="modal fade" id="modalVideo1" tabindex="-1" aria-labelledby="modalVideo1Label" aria-hidden="true">
+            <div class="modal-dialog  modal-lg modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <div class="embed-responsive">
+                    <div style="padding:56.25% 0 0 0; position:relative;">
+                      <iframe src="https://player.vimeo.com/video/23237102?autoplay=1&loop=1&color=ffffff&title=0&byline=0&portrait=0"
+                      style="position:absolute; top:0; left:0; width:100%; height:100%;"
+                      frameborder="0" allow="fullscreen; picture-in-picture"
+                      allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Modal Video 1 -->
+
+        </div>
+      </section>
+
+      <section class="service">
+
+        <div id="service" class="linkService selection-title  mb-5">
+          -
+        </div>
+
+        <div class="selection-title text-center">
+          <h2>Услуги</h2>
+          <p>Широкий спектр</p>
+        </div>
+
+        <div class="container container-custom">
+          <hr class="featurette-divider">
+
+          <div class="row featurette">
+            <div class="col-md-7">
+              <h2 class="featurette-heading">Если вам нужен крутой видео ролик, то <span class="text-muted">Вы по адресу</span></h2>
+              <p class="lead">Мы имеем опыт в производстве видео любой сложности, от имиджeвых роликов-визиток до крупнокалиберных пушечных клипов, готовых порвать просмотры.</p>
+            </div>
+            <div class="col-md-5">
+              <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+              <img class="img-fluid rounded float-end" src="img/service_1.jpg" alt="">
+            </div>
+          </div>
+
+          <hr class="featurette-divider">
+
+          <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+              <h2 class="featurette-heading">Хочется чего-то креативного? <span class="text-muted">Используйте умы луших из нас</span></h2>
+              <p class="lead">Мы подробно изучим ваш интерес в продукте и составим небывалый сценарий. Самые невероятные сюжеты и xаризматичные персонажи. Раскрутим вашу идею до головокружительного заворожения!</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+              <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+              <img class="img-fluid rounded float-end" src="img/service_2.jpg" alt="">
+            </div>
+          </div>
+
+          <hr class="featurette-divider">
+
+          <div class="row featurette">
+            <div class="col-md-7">
+              <h2 class="featurette-heading">Мастерство кроется в <span class="text-muted">деталях</span></h2>
+              <p class="lead">Специализированная анимация поможет Вам оживить любой образ или посыл, так же это хорошая идея для ввода профессиональных штрихов в Ваш проект</p>
+            </div>
+            <div class="col-md-5">
+              <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+              <img class="img-fluid rounded float-end" src="img/service_3.gif" alt="">
+            </div>
+          </div>
+
+          <hr class="featurette-divider">
+
+        </div><!-- container marketing-->
+      </section>
+
+      <section class="partners">
+        <div id="partners" class="linkPartners selection-title  mb-5">
+          -
+        </div>
+        <div class="selection-title text-center">
+          <h2>Наши партнёры</h2>
+          <p>Эти имена говорят сами за себя</p>
+        </div>
+
+        <div class="container my-2">
+          <div class="row text-center">
+            <div class="col my-3">
+              <img class="img-responsive rounded"  src="https://toplogos.ru/images/thumbs/preview-logo-bzhf-bank.png"  alt="Логотип БЖФ Банк">
+            </div>
+            <div class="col my-3">
+              <img class="img-responsive rounded" src="https://toplogos.ru/images/thumbs/preview-logo-zoom.png"  alt="Логотип Zoom">
+            </div>
+            <div class="col my-3">
+              <img class="img-responsive rounded" src="https://toplogos.ru/images/thumbs/preview-logo-paramount-pictures.png"  alt="Логотип Paramount Pictures">
+            </div>
+            <div class="col my-3">
+              <img class="img-responsive rounded" src="https://toplogos.ru/images/thumbs/preview-logo-mamadeti.png"  alt="Логотип Мать и дитя">
+            </div>
+            <div class="col my-3">
+              <img class="img-responsive rounded" src="https://toplogos.ru/images/thumbs/preview-logo-avto24.png"  alt="Логотип Авто24" >
+            </div>
+            <div class="col my-3">
+              <img class="img-responsive rounded" src="https://toplogos.ru/images/thumbs/preview-logo-indiyskoe-kino.png"  alt="Логотип Индийское кино">
+            </div>
+            <div class="col my-3">
+              <img class="img-responsive rounded" src="https://toplogos.ru/images/thumbs/preview-logo-huter.png"  alt="Логотип Huter">
+            </div>
+            <div class="col my-3">
+              <img class="img-responsive rounded" src="https://toplogos.ru/images/thumbs/preview-logo-tiktok.png"  alt="Логотип TikTok">
+            </div>
+            <div class="col my-3">
+              <img class="img-responsive rounded" src="https://toplogos.ru/images/thumbs/preview-logo-deutsche-welle.png"  alt="Логотип Deutsche Welle">
+            </div>
+            <div class="col my-3">
+              <img class="img-responsive rounded" src="https://toplogos.ru/images/thumbs/preview-logo-ntv-serial.png"  alt="Логотип НТВ Сериал">
+            </div>
+            <div class="col my-3">
+              <img class="img-responsive rounded" src="https://toplogos.ru/images/thumbs/preview-logo-yandex-eda.png"  alt="Логотип Яндекс.Еда" >
+            </div>
+            <div class="col my-3">
+              <img class="img-responsive rounded" src="https://toplogos.ru/images/thumbs/preview-logo-stels.png"  alt="Логотип Stels" >
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="contact">
+        <div id="contact" class="linkContact selection-title  mb-5">
+          -
+        </div>
+        <div class="selection-title text-center">
+          <h2>Свяжитесь с нами</h2>
+          <p>Консультация, расчёт суммы и объема работ</p>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7 shadow rounded p-5">
+              <div class="row">
+                <div class="col mb-3">
+                  <label for="form-label">Имя</label>
+                  <input type="text" class="form-control" placeholder="Имя">
+                </div>
+                <div class="col mb-3">
+                  <label for="form-label">Фамилия</label>
+                  <input type="text" class="form-control" placeholder="Фамилия">
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="form-label">Email или любой контакт</label>
+                <input type="text" class="form-control" placeholder="email / whatsapp / telegram">
+              </div>
+              <div class="mb-3">
+                <label for="form-label">Продукт</label>
+                <input type="text" class="form-control" placeholder="(сделать выпадающий список)">
+              </div>
+              <div class="mb-3">
+                <label for="form-label">Пару слов от вас</label>
+                <textarea name="" class="form-control" placeholder="Коротко о проекте" rows="3"></textarea>
+              </div>
+
+
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Launch demo modal
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Подтверждение</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Убедитесь в надежности оставленных контактов чтобы мы смогли связаться с вами
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary">Отправить</button>
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="col-md-5">
+              <!-- <div class="col-md-5 bg-light"> do white unfilled image background-->
+              <div class="ms-2">
+                <img class="img-fluid" src="img/contact_us.jpg" alt="">
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+
+  </main>
+
+  <footer class="bg-dark text-white pt-5 pb-4">
+    <div class="container text-center text-md-start">
+      <div class="row text-center text-md-start">
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="h5-footer-custom text-uppercase mb-4 font-weight-bolt text-warning">Ани</h5>
+          <p>Здесь какая то интересная и напутствующая информация от компании, которую я не придумал.</p>
+        </div>
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="h5-footer-custom text-uppercase mb-4 font-weight-bolt text-warning">Продукты</h5>
+          <p> <a class="text-white" href="#" style="text-decoration: none;">Сценарии</a> </p>
+          <p> <a class="text-white" href="#" style="text-decoration: none;">Анимации</a> </p>
+          <p> <a class="text-white" href="#" style="text-decoration: none;">Клипы</a> </p>
+          <p> <a class="text-white" href="#" style="text-decoration: none;">Монтаж видео</a> </p>
+        </div>
+
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="h5-footer-custom text-uppercase mb-4 font-weight-bolt text-warning">Оформление</h5>
+          <p> <a class="text-white" href="#" style="text-decoration: none;">Для ИП</a> </p>
+          <p> <a class="text-white" href="#" style="text-decoration: none;">Для Юр.лиц</a> </p>
+          <p> <a class="text-white" href="#" style="text-decoration: none;">Росреестр</a> </p>
+          <p> <a class="text-white" href="#" style="text-decoration: none;">Помошь</a> </p>
+        </div>
+
+        <div class="col-md-4 col-lg-3 col-xl-2 mx-auto mt-3">
+          <h5 class="h5-footer-custom text-uppercase mb-4 font-weight-bolt text-warning">Контакты</h5>
+          <p> <i class="fas fa-home mr-3"> РФ, Казань Пушкина 22-3</i> </p>
+          <p> <i class="fas fa-envelope mr-3"> anineoni@amail.ain</i> </p>
+          <p> <i class="fas fa-phone mr-3"> +7 (954) 448 63-20</i> </p>
+          <p> <i class="fas fa-print mr-3"> +01 448 825 4025</i> </p>
+        </div>
+        <hr class="mb-4">
+
+        <div class="row align-item-center">
+          <div class="col-md-7 col-lg-8">
+
+            <p> Copyright ©2021 Все права защищены:
+              <a href="#" style="text-decoration:none;">
+                <strong class="text-warning">ANI-Ltd</strong>
+              </a>
+            </p>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="text-center text-md-end">
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm text-white" style="font-size: 23px;" href="https://vk.com/anineoni" target="_blank">
+                    <i class="fab fa-vk"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm text-white" style="font-size: 23px;" href="https://www.instagram.com/anineoni/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm text-white" style="font-size: 23px;" href="https://teleg.one/ANINEONI" target="_blank">
+                    <i class="fab fa-telegram"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm text-white" style="font-size: 23px;" href="https://www.youtube.com/channel/UCnIst-vVEdo40L_z--6axSA" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm text-white" style="font-size: 23px;" href="https://itunes.apple.com/ru/artist/%D0%B0%D0%BD%D0%B8/1391749053" target="_blank">
+                    <i class="fab fa-itunes"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm text-white" style="font-size: 23px;" href="https://music.yandex.ru/album/5485219" target="_blank">
+                    <i class="fab fa-yandex"></i>
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+    <!-- Modal vimeo videos -->
+    <script src="https://player.vimeo.com/api/player.js"></script>
+
+    <!-- Optional JavaScript for Bootstrap5; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script> -->
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+    integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+    crossorigin="anonymous"></script>
+  </body>
+  </html>
