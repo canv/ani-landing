@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<!-- <html lang="en" xmlns:th="http://www.thymeleaf.org"> -->
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<!-- <html lang="en"> -->
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,9 +16,6 @@
   <link rel="stylesheet"  type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
 
   <!-- custom CSS -->
-  <!-- <link rel="stylesheet"  href="css/style.css" type="text/css"> -->
-<!--  <link rel="stylesheet"  href="css\style.css" type="text/css">-->
-<!-- <link rel="stylesheet" type="text/css" media="all" href="css/style.css" th:href="@{css/style.css}" /> -->
   <link rel="stylesheet"  href="css/style.css" type="text/css">
 
   <title>Ani</title>
@@ -68,6 +65,16 @@
           <h2 >Портфолио</h2>
           <p>Наши работы</p>
         </div>
+        <div>
+          <form action="#" th:action="@{/}" th:object="${videoContent}" method="post" class="todo_admin">
+              <p>number: <input type="text" th:field="*{number}" /></p>
+              <p>title: <input type="text" th:field="*{title}" /></p>
+              <p>about: <input type="text" th:field="*{about}" /></p>
+              <p>author: <input type="text" th:field="*{author}" /></p>
+              <p>source: <input type="text" th:field="*{source}" /></p>
+              <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+          </form>
+        </div>
         <div class="container my-2">
           <div class="row video-btns-custom">
             <div class="col-md-6 col-sm-12 mt-3">
@@ -75,9 +82,12 @@
                 <div class="card bg-dark text-white card-video-work">
                   <img src="img/video_perview_1.jpg" class="card-img" alt="...">
                   <div class="card-img-overlay">
-                    <h5 class="card-title">BOYFRIEND</h5>
+                    <!-- <h5 class="card-title">BOYFRIEND</h5>
                     <p class="card-text">Track 4 from physical versions of IGOR featuring CHARLIE WILSON and SANTIGOLD . This content is a little bit longer.</p>
-                    <p class="card-text">Tyler, The Creator</p>
+                    <p class="card-text">Tyler, The Creator</p> -->
+                    <h5 class="card-title" th:text="${videoContent.title}"></h5>
+                    <p class="card-text" th:text="${videoContent.about}"></p>
+                    <p class="card-text" th:text="${videoContent.author}"></p>
                   </div>
                 </div>
               </a>
@@ -127,7 +137,11 @@
                 <div class="modal-body">
                   <div class="embed-responsive">
                     <div style="padding:56.25% 0 0 0; position:relative;">
-                      <iframe src="https://player.vimeo.com/video/23237102?autoplay=1&loop=1&color=ffffff&title=0&byline=0&portrait=0"
+                      <!-- <iframe src="https://player.vimeo.com/video/23237102?autoplay=1&loop=1&color=ffffff&title=0&byline=0&portrait=0"
+                      style="position:absolute; top:0; left:0; width:100%; height:100%;"
+                      frameborder="0" allow="fullscreen; picture-in-picture"
+                      allowfullscreen></iframe> -->
+                      <iframe th:src="${videoContent.source}"
                       style="position:absolute; top:0; left:0; width:100%; height:100%;"
                       frameborder="0" allow="fullscreen; picture-in-picture"
                       allowfullscreen></iframe>
