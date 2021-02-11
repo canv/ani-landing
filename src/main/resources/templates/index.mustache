@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
 <!-- <html lang="en"> -->
 <head>
   <meta charset="UTF-8">
@@ -66,14 +66,22 @@
           <p>Наши работы</p>
         </div>
         <div>
-          <form action="#" th:action="@{/}" th:object="${videoContent}" method="post" class="todo_admin">
-              <p>number: <input type="text" th:field="*{number}" /></p>
-              <p>title: <input type="text" th:field="*{title}" /></p>
-              <p>about: <input type="text" th:field="*{about}" /></p>
-              <p>author: <input type="text" th:field="*{author}" /></p>
-              <p>source: <input type="text" th:field="*{source}" /></p>
-              <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
-          </form>
+<!--          <form action="#" th:action="@{/}" th:object="${videoContent}" method="post" class="todo_admin">-->
+<!--              <p>number: <input type="text" th:field="*{number}" /></p>-->
+<!--              <p>title: <input type="text" th:field="*{title}" /></p>-->
+<!--              <p>about: <input type="text" th:field="*{about}" /></p>-->
+<!--              <p>author: <input type="text" th:field="*{author}" /></p>-->
+<!--              <p>source: <input type="text" th:field="*{source}" /></p>-->
+<!--              <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>-->
+<!--          </form>-->
+            <form method="post" class="todo_admin">
+                <p>number: <input type="text" name="number"/></p>
+                <p>title: <input type="text" name="title" /></p>
+                <p>about: <input type="text" name="about"  /></p>
+                <p>author: <input type="text" name="author"  /></p>
+                <p>source: <input type="text" name="source" /></p>
+                <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+            </form>
         </div>
         <div class="container my-2">
           <div class="row video-btns-custom">
@@ -85,9 +93,9 @@
                     <!-- <h5 class="card-title">BOYFRIEND</h5>
                     <p class="card-text">Track 4 from physical versions of IGOR featuring CHARLIE WILSON and SANTIGOLD . This content is a little bit longer.</p>
                     <p class="card-text">Tyler, The Creator</p> -->
-                    <h5 class="card-title" th:text="${videoContent.title}"></h5>
-                    <p class="card-text" th:text="${videoContent.about}"></p>
-                    <p class="card-text" th:text="${videoContent.author}"></p>
+                    <h5 class="card-title" >{{videoContent.title}}</h5>
+                    <p class="card-text" >{{videoContent.about}}</p>
+                    <p class="card-text">{{videoContent.author}}</p>
                   </div>
                 </div>
               </a>
@@ -141,7 +149,7 @@
                       style="position:absolute; top:0; left:0; width:100%; height:100%;"
                       frameborder="0" allow="fullscreen; picture-in-picture"
                       allowfullscreen></iframe> -->
-                      <iframe th:src="${videoContent.source}"
+                      <iframe src="{{videoContent.source}}"
                       style="position:absolute; top:0; left:0; width:100%; height:100%;"
                       frameborder="0" allow="fullscreen; picture-in-picture"
                       allowfullscreen></iframe>
